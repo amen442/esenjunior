@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #0a1a2c;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2f6fed;
+  letter-spacing: 0.08em;
+}
+
+.header nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  font-weight: 600;
+  color: #5f6c82;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.header nav a:hover {
+  color: #2f6fed;
+  background: rgba(47, 111, 237, 0.12);
+}
+
+/* ===== PROFILE CARD ===== */
+.profile-card {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 3rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.08);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3rem;
+  animation: slideInUp 0.8s ease-out;
+}
+
+/* ===== PHOTO ===== */
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #2f6fed, #00d4c4);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== INFO ===== */
+.info h1 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #0a1a2c;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #2f6fed;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== BADGES ===== */
+.badges {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  background: rgba(47, 111, 237, 0.1);
+  color: #2f6fed;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(47, 111, 237, 0.2);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(47, 111, 237, 0.2);
+}
+
+/* ===== BIO ===== */
+.bio {
+  margin-bottom: 2rem;
+}
+
+.bio p {
+  color: #5f6c82;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===== CONTACT BUTTONS ===== */
+.contact {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.btn-contact,
+.btn-linkedin,
+.btn-primary,
+.btn-outline {
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-contact {
+  background: linear-gradient(135deg, #2f6fed, #00d4c4);
+  color: white;
+  border: none;
+}
+
+.btn-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(47, 111, 237, 0.3);
+}
+
+.btn-linkedin,
+.btn-outline {
+  background: transparent;
+  color: #2f6fed;
+  border: 2px solid #2f6fed;
+}
+
+.btn-linkedin:hover,
+.btn-outline:hover {
+  background: #2f6fed;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ===== SIDEBOX ===== */
+.sidebox {
+  background: rgba(47, 111, 237, 0.05);
+  border: 1px solid rgba(47, 111, 237, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sidebox h4 {
+  color: #2f6fed;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sidebox p {
+  color: #5f6c82;
+  font-size: 0.9rem;
+}
+
+/* ===== PORTFOLIO SECTION ===== */
+.portfolio-section {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 3rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.08);
+  margin-bottom: 3rem;
+}
+
+.portfolio-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0a1a2c;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-card {
+  background: rgba(245, 247, 251, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+.portfolio-card video,
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a1a2c;
+}
+
+.portfolio-card p {
+  padding: 0 1.5rem 1.5rem;
+  color: #5f6c82;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #5f6c82;
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .profile-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .photo {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    justify-content: center;
+  }
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+  background: #0f0f0f;
+  color: white;
+}
+
+body.dark .header {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .profile-card {
+  background: #11192b;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .info h1 {
+  color: #f5f7fb;
+}
+
+body.dark .role {
+  color: #00d4c4;
+}
+
+body.dark .badge {
+  background: rgba(0, 212, 196, 0.1);
+  color: #00d4c4;
+  border-color: rgba(0, 212, 196, 0.2);
+}
+
+body.dark .badge:hover {
+  box-shadow: 0 8px 20px rgba(0, 212, 196, 0.2);
+}
+
+body.dark .bio p {
+  color: #f5f7fb;
+}
+
+body.dark .sidebox {
+  background: rgba(0, 212, 196, 0.05);
+  border-color: rgba(0, 212, 196, 0.1);
+}
+
+body.dark .sidebox h4 {
+  color: #00d4c4;
+}
+
+body.dark .sidebox p {
+  color: #f5f7fb;
+}
+
+body.dark .btn-linkedin,
+body.dark .btn-outline {
+  color: #00d4c4;
+  border-color: #00d4c4;
+}
+
+body.dark .btn-linkedin:hover,
+body.dark .btn-outline:hover {
+  background: #00d4c4;
+  color: #0a101d;
+}
+
+body.dark .portfolio-section {
+  background: #11192b;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .portfolio-section h2 {
+  color: #f5f7fb;
+}
+
+body.dark .portfolio-card {
+  background: rgba(17, 25, 43, 0.5);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark .portfolio-card h3 {
+  color: #f5f7fb;
+}
+
+body.dark .portfolio-card p {
+  color: #f5f7fb;
+}
+
+body.dark footer {
+  background: rgba(10, 16, 29, 0.8);
+}
+
+/* ===== BOUTON MODE SOMBRE ===== */
+.toggle-dark {
+  border: none;
+  background: #ffffff;
+  color: #0a1a2c;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toggle-dark:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .toggle-dark {
+  background: #1c293d;
+  color: #f5f7fb;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark .toggle-dark:hover {
+  background: #2f6fed;
+  color: white;
+}
+
+/* ===== BOUTON BACK TO TOP ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #0077ff;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, background 0.6s;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: #005edc;
+}
