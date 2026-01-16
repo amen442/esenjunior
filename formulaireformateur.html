@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espace Formateur | EsenJunior</title>
+  <link rel="shortcut icon" href="../files/images/logo.png" sizes="512x512" type="image/png">
+  <link rel="stylesheet" href="../css/espace_new.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">EsenJunior</div>
+    
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="formulaireformateur.html" class="active">Formulaire formateur</a>
+      <a href="espaceformation.html">Espace formations</a>
+      <a href="espaceetudiant.html">Espace étudiants</a>
+    </nav>
+    
+    <button class="toggle-dark" id="toggleTheme">Mode sombre</button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Espace formateur</p>
+        <h1>Propulsez vos savoir-faire auprès des talents ESEN.</h1>
+        <p>Renseignez votre expertise, décrivez votre format et nous vous accompagnons sur la logistique, la communication et la mise en relation avec les étudiants motivés.</p>
+        <div>
+        <ul class="benefits">
+          <li>Accompagnement pédagogique et design</li>
+          <li>Mise en avant sur nos canaux officiels</li>
+          <li>Suivi cohortes et feedback participants</li>
+        </ul>
+      </div>
+      <div class="hero-badges">
+          <div>
+            <strong class="stat-counter" data-target="40">0</strong>
+            <span>Ateliers réalisés</span>
+          </div>
+          <div>
+            <strong class="stat-counter" data-target="400">0</strong>
+            <span>Étudiants formés</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title">
+        <h2>Soumettre une formation</h2>
+        <span>Merci de détailler votre proposition pour validation</span>
+      </div>
+      <form method="post" action="#" id="mentorForm" class="form-grid">
+        <div class="form-group">
+          <label for="mentorName">Nom & prénom * </label>
+          <input type="text" id="mentorName" name="mentorName" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="mentorEmail">Email professionnel * </label>
+          <input type="email" id="mentorEmail" name="mentorEmail" placeholder="prenom.nom@esen.tn" required>
+        </div>
+        <div class="form-group">
+          <label for="mentorTel">Téléphone * </label>
+          <input type="tel" id="mentorTel" name="mentorTel" placeholder="XX XXX XXX" required>
+        </div>
+        <div class="form-group">
+          <label for="expertise">Spécialité principale * </label>
+          <input type="text" id="expertise" name="expertise" placeholder="Design, data, cybersécurité..." required>
+        </div>
+        <div class="form-group">
+          <label for="experience">Années d’expérience * </label>
+          <input type="number" id="experience" name="experience" min="1" placeholder="4" required>
+        </div>
+        <div class="form-group">
+          <label for="nextTraining">Titre de la formation * </label>
+          <input type="text" id="nextTraining" name="nextTraining" placeholder="Growth Marketing Sprint" required>
+        </div>
+        <div class="form-group">
+          <label for="format">Format & durée * </label>
+          <input type="text" id="format" name="format" placeholder="2 jours / présentiel / 20 participants" required>
+        </div>
+        <div class="form-group full">
+          <label for="mentorBio">Objectifs & contenu</label>
+          <textarea id="mentorBio" name="mentorBio" placeholder="Décrivez les objectifs, les modules, les prérequis..."></textarea>
+          <small id="bioCount">0</small>
+        </div>
+        <button type="submit" class="form-submit">Envoyer la proposition</button>
+        <p class="form-status" id=
+        "mentorStatus"></p>
+      </form>
+    </section>
+  </main>
+  
+
+  <footer>
+    &copy; <span id="year"></span> EsenJunior. Tous droits réservés. 
+    <br> Site réalisé par: Amen Allah Ibrahmi BIS , Kmar Mejri BIS, Roua Khouildi EB , Mohamed Adel Amdouni BIS.
+  </footer>
+
+  <script src="../js/formateur.js"></script>
+  <script src="../js/theme.js"></script>
+</body>
+</html>

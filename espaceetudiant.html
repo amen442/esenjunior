@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espace Étudiants | EsenJunior</title>
+  <link rel="shortcut icon" href="../files/images/logo.png" sizes="512x512" type="image/png">
+  <link rel="stylesheet" href="../css/espace_new.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">EsenJunior</div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="formulaireformateur.html">Formulaire formateur</a>
+      <a href="espaceformation.html">Espace formations</a>
+      <a href="espaceetudiant.html" class="active">Espace étudiants</a>
+    </nav>
+    
+    <button class="toggle-dark" id="toggleTheme">Mode sombre</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Espace étudiants</p>
+        <h1>Choisissez votre prochaine formation EsenJunior.</h1>
+        <p>Accédez aux ateliers animés par des professionnels, développez vos compétences transverses et rejoignez une communauté d’étudiants engagés.</p>
+        <div class="hero-badges">
+          <div>
+            <strong class="stat-counter" data-target="20">0</strong>
+            <span>Programmes disponibles</span>
+          </div>
+          <div>
+            <strong class="stat-counter" data-target="100">0</strong>
+            <span>Certifications délivrées</span>
+          </div>
+          <div>
+            <strong class="stat-counter" data-target="48">0</strong>
+            <span>Temps de réponse (h)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Formulaire d'inscription</h2>
+        <span>3 minutes pour rejoindre la prochaine cohorte</span>
+      </div>
+      <form method="post" action="#" id="studentForm" class="form-grid">
+        <div class="form-group">
+          <label for="studentName">Nom & prénom</label>
+          <input type="text" id="studentName" name="studentName" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="studentEmail">Email professionnel</label>
+          <input type="email" id="studentEmail" name="studentEmail" placeholder="prenom.nom@esen.tn" required>
+        </div>
+        <div class="form-group">
+          <label for="studentPhone">Téléphone</label>
+          <input type="tel" id="studentPhone" name="studentPhone" placeholder="XX XXX XXX" required>
+        </div>
+        <div class="form-group">
+          <label for="studentMajor">Filière / promotion</label>
+          <input type="text" id="studentMajor" name="studentMajor" placeholder="Finance, Marketing, IT..." required>
+        </div>
+        <div class="form-group">
+          <label for="studentTraining">Formation souhaitée</label>
+          <select id="studentTraining" name="studentTraining" required>
+            <option value="">Choisissez une formation</option>
+            <option value="design">Design Sprint</option>
+            <option value="dev">Initiation Dev Web</option>
+            <option value="cyber">Cyber sécurité 101</option>
+            <option value="marketing">Marketing de lancement</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit">Envoyer ma candidature</button>
+        <p class="form-status" id="studentStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> EsenJunior. Tous droits réservés. 
+    <br> Site réalisé par: Amen Allah Ibrahmi BIS , Kmar Mejri BIS, Roua Khouildi EB , Mohamed Adel Amdouni BIS.
+  </footer>
+
+  <script src="../js/espaceetudiant.js"></script>
+  <script src="../js/theme.js"></script>
+</body>
+</html>

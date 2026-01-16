@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espace Formations | EsenJunior</title>
+  <link rel="shortcut icon" href="../files/images/logo.png" sizes="512x512" type="image/png">
+  <link rel="stylesheet" href="../css/espaceformation.css">
+</head>
+<body>
+  <header>
+    <div class="logo" aria-label="EsenJunior">EsenJunior</div>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="formulaireformateur.html">Formulaire formateur</a>
+      <a href="espaceformation.html" class="active">Espace formations</a>
+      <a href="espaceetudiant.html">Espace étudiants</a>
+    </nav>
+    <button class="toggle-dark" id="toggleTheme" type="button" aria-pressed="false">Mode sombre</button>
+  </header>
+
+  <main>
+    <section class="hero" id="intro">
+      <div>
+        <p class="eyebrow">Planning des sessions</p>
+        <h1>Trouvez la formation parfaite pour votre équipe ou votre campus.</h1>
+        <p>Parcourez nos workshops, vérifiez les disponibilités des formateurs et contactez l’équipe EsenJunior pour réserver un créneau dédié.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="formulaireformateur.html">Proposer une nouvelle formation</a>
+          <a class="btn ghost"href="mailto:kmar.mejri@esen.tn" onclick="window.location.href='mailto:kmar.mejri@esen.tn?subject=Demande de contact EsenJunior&body=Bonjour, je vous contacte depuis la page Espace Formations.'; return false;"> Contact direct </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="planning">
+      <div class="section-title">
+        <h2>Planning à venir</h2>
+        <span>Mise à jour hebdomadaire · sessions limitées</span>
+      </div>
+      
+      <div class="countdown-container">
+        <h3>Prochaine formation dans</h3>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days"></span>
+            <span class="countdown-label">Jours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours"></span>
+            <span class="countdown-label">Heures</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes"></span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds"></span>
+            <span class="countdown-label">Secondes</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="table-wrapper">
+        <table class="formations-table">
+          <thead>
+            <tr>
+              <th>Formation</th>
+              <th>Date</th>
+              <th>Durée</th>
+              <th>Formateur</th>
+              <th>Places</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Design Sprint</td>
+              <td>28 - 29 déc. 2024</td>
+              <td>2 jours</td>
+              <td>Kmar Mejri</td>
+              <td>18 / 20</td>
+            </tr>
+            <tr>
+              <td>Initiation Dev Web</td>
+              <td>15 - 17 jan. 2025</td>
+              <td>3 jours</td>
+              <td>Adel Amdouni</td>
+              <td>12 / 18</td>
+            </tr>
+            <tr>
+              <td>Cyber sécurité 101</td>
+              <td>22 - 23 fév. 2025</td>
+              <td>2 jours</td>
+              <td>Amen Allah ibrahmi</td>
+              <td>Complet</td>
+            </tr>
+            <tr>
+              <td>Marketing de lancement</td>
+              <td>14 mars 2025</td>
+              <td>1 jour</td>
+              <td>Roue khouildi</td>
+              <td>22 / 25</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="formateurs">
+      <div class="section-title">
+        <h2>Profils des formateurs</h2>
+        <span>Experts issus de l'ESEN & de l'écosystème startup</span>
+      </div>
+      <div class="mentor-grid">
+        <article class="mentor-card">
+          <a href="profil-adel.html" class="mentor-link" aria-label="Voir le profil de Adel Amdouni">
+            <img src="../files/images/adel.jpg" alt="Adel Amdouni">
+          </a>
+          <h3>Adel Amdouni</h3>
+          <p>Graphic Design · 6 ans exp.</p>
+          <span>UX research, facilitation Sprint, design systems.</span>
+        </article>
+        <article class="mentor-card">
+          <a href="profil-kmar.html" class="mentor-link" aria-label="Voir le profil de Kmar Mejri">
+            <img src="../files/images/kmar.jpeg" alt="Kmar Mejri">
+          </a>
+          <h3>Kmar Mejri</h3>
+          <p>Video Editor · 5 ans exp.</p>
+          <span>Montage vidéo, Sound Design, Color Grading.</span>
+        </article>
+        <article class="mentor-card">
+          <a href="profil-amen.html" class="mentor-link" aria-label="Voir le profil de Amen Allah Ibrahmi">
+          <img src="../files/images/amen.jpeg" alt="Amen Allah ibrahmi">
+          </a>
+          <h3>Amen Allah Ibrahmi</h3>
+          <p>IA & Automation Expert · 3 ans exp.</p>
+          <span>Intelligence Artificielle, N8n Automation, Leadership.</span>
+        </article>
+        <article class="mentor-card">
+          <a href="profil-roue.html" class="mentor-link" aria-label="Voir le profil de Roua Khouildi">
+            <img src="../files/images/roua.png" alt="Roue khouildi">
+          </a>
+          <h3>Roua Khouildi</h3>
+          <p>Community Manager · 3 ans exp.</p>
+          <span>Social Media, Community Management, Content Strategy.</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> EsenJunior. Tous droits réservés. 
+    <br> Site réalisé par: Amen Allah Ibrahmi BIS , Kmar Mejri BIS, Roua Khouildi EB , Mohamed Adel Amdouni BIS.
+  </footer>
+
+  <script src="../js/espaceformation.js"></script>
+  <script src="../js/theme.js"></script>
+</body>
+</html>
